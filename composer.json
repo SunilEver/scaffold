@@ -1,0 +1,14 @@
+{
+    "name": "vendorsv/scaffold",
+    "description": "A basic scaffolding of package",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Sunil Vaishnav",
+            "email": "sunil@extreme-agile.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
