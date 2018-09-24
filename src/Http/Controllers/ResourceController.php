@@ -14,7 +14,7 @@ class ResourceController extends Controller
      */
     public function index()
     {
-        echo time();
+        return view('scaffold::resource.index');
     }
 
     /**

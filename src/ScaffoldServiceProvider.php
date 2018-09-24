@@ -20,6 +20,8 @@ class ScaffoldServiceProvider extends ServiceProvider
         foreach ($this->providers as $provider) {
             $this->app->register($provider);
         }
+
+        $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'scaffold');
     }
 
     /**
