@@ -1,3 +1,3 @@
 <?php
 
-Route::resource('resource', 'Scaffold\Http\Controllers\ResourceController');
+Route::resource('resource', 'ResourceController');
