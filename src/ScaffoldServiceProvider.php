@@ -22,6 +22,10 @@ class ScaffoldServiceProvider extends ServiceProvider
         }
 
         $this->loadViewsFrom(realpath(__DIR__.'/../resources/views'), 'scaffold');
+
+        // $this->publishes([
+        //     realpath(__DIR__.'/../resources/views') => base_path('resources/views/scaffold'),
+        // ]);
     }
 
     /**
