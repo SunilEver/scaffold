@@ -26,6 +26,11 @@ class ScaffoldServiceProvider extends ServiceProvider
         // $this->publishes([
         //     realpath(__DIR__.'/../resources/views') => base_path('resources/views/scaffold'),
         // ]);
+
+        # Publish Migrations and Seeds
+        $this->publishes([
+            "{$this->baseDir}/database" => database_path(),
+        ], 'migrations');
     }
 
     /**
