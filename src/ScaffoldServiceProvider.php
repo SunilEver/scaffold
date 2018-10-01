@@ -29,7 +29,7 @@ class ScaffoldServiceProvider extends ServiceProvider
 
         # Publish Migrations and Seeds
         $this->publishes([
-            "{$this->baseDir}/database" => database_path(),
+            realpath(__DIR__.'/../database') => database_path(),
         ], 'migrations');
     }
 
