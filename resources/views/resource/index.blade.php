@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel Timezones</title>
+        <title>Resources</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -37,10 +37,13 @@
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">{{ date('Y-m-d H:i:s') }}</div>
-            </div>
-        </div>
+        <section>
+            <ul>
+                <h3>Resources</h3>
+                @foreach($resources as $resource)
+                    <li>{{ $resource->label }}</li>
+                @endforeach
+            </ul>
+        </section>
     </body>
 </html>

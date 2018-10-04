@@ -3,6 +3,7 @@
 namespace Scaffold\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Scaffold\Models\Resource;
 use App\Http\Controllers\Controller;
 
 class ResourceController extends Controller
@@ -14,7 +15,7 @@ class ResourceController extends Controller
      */
     public function index()
     {
-        return view('scaffold::resource.index');
+        return view('scaffold::resource.index')->withResources(Resource::get());
     }
 
     /**
